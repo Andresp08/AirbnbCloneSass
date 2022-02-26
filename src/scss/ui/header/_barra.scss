@@ -17,8 +17,12 @@
     }
     &__link{
         color: v.$blanco;
+        font-size: 1.7rem;
+        font-weight: 700;
     }
     &__nombre{
         color: v.$blanco;
+        font-size: 2rem;
+        font-weight: 700;
     }
 }
