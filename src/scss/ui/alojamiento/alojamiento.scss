@@ -1,0 +1,24 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.alojamiento{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    &__imagen{
+        width: 14rem;
+    }
+    &__titulo{
+        margin: 0;
+    }
+    &__acerca{
+        margin: 0;
+        max-width: 10rem;
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
+}

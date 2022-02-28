@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -400,6 +401,10 @@ a {
   text-decoration: none;
 }
 
+[class$=__heading] {
+  margin: 2rem 0;
+}
+
 .header {
   background-image: url(../../../../build/img/header.jpg);
   background-size: cover;
@@ -509,5 +514,81 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+.alojamientos__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .alojamientos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .alojamientos__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.alojamiento {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.alojamiento__imagen {
+  width: 14rem;
+}
+.alojamiento__titulo {
+  margin: 0;
+}
+.alojamiento__acerca {
+  margin: 0;
+  max-width: 10rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.lugares__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  /*aplicar el siguiente código al primer nivel de hijos*/
+}
+.lugares__grid > * {
+  scroll-snap-align: center;
+}
+@media (min-width: 768px) {
+  .lugares__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .lugares__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.lugar__imagen {
+  border-radius: 1rem;
+}
+.lugar__nombre {
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=app.css.map */
