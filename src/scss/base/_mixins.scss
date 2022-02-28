@@ -46,6 +46,10 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 
+    @include tablet{
+        overflow: unset;
+    }
+
     /*aplicar el siguiente código al primer nivel de hijos*/
     > * {
         scroll-snap-align: center;

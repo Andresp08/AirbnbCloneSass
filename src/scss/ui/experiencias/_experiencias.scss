@@ -1,0 +1,37 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.experiencias{
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(3, 30rem);
+        column-gap: 2rem;
+        @include m.scrollHorizontal();
+
+        @include m.tablet{
+            @include m.grid(2, 2rem);
+        }
+
+        @include m.desktop{
+            @include m.grid(3, 2rem);
+        }
+    }
+
+    &__subtitulo{
+        margin: .8rem 0;
+        font-size: 1.8rem;
+    }
+}
+
+.experiencia{
+    &__titulo{
+        font-size: 1.8rem;
+        padding-top: 1rem;
+    }
+    &__descripcion{
+        margin: 1rem 0 0 0;
+        font-size: 1.7rem;
+    }
+}
