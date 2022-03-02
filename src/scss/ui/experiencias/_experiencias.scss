@@ -26,12 +26,16 @@
 }
 
 .experiencia{
+    &__imagen{
+        border-radius: 1rem;
+    }
     &__titulo{
-        font-size: 1.8rem;
+        font-size: 2rem;
+        font-weight: 700;
         padding-top: 1rem;
     }
     &__descripcion{
         margin: 1rem 0 0 0;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 }
